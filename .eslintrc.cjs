@@ -16,5 +16,10 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/prop-types': 'off',
+    'no-unused-vars': [
+      'warn', // Chuyển cảnh báo thành cảnh báo thay vì lỗi
+      { varsIgnorePattern: '^React$' }, // Bỏ qua biến 'React' nếu không dùng
+    ],
   },
-}
+};
